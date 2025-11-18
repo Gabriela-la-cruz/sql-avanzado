@@ -1,0 +1,12 @@
+https://docs.google.com/presentation/d/1GmILz_sTMpdkb-jCdBH7FRLxKERSYb-2dApXwjq6h1A/edit?slide=id.p27#slide=id.p27
+
+https://shorturl.at/Meyo3
+
+
+SELECT c.nombre, p.fecha_pedido, pr.nombre, pr.precio_unidad  
+FROM pedidos p
+LEFT JOIN clientes c
+ON c.id_cliente = p.cliente_id
+LEFT JOIN productos pr
+ON p.producto_id = pr.id_producto;
+
